@@ -1,0 +1,6 @@
+python-dotenv
+pyserial-asyncio
+websockets
+aiortc
+opencv-python-headless
+numpy
