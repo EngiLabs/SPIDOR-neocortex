@@ -3,7 +3,7 @@ import numpy as np
 from aiortc import RTCPeerConnection, RTCSessionDescription, VideoStreamTrack
 from av import VideoFrame
 
-from ..config import CAMERA_HEIGHT, CAMERA_WIDTH
+from config import CAMERA_HEIGHT, CAMERA_WIDTH
 
 
 from typing import TYPE_CHECKING
