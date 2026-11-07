@@ -1,6 +1,6 @@
 from os import getenv as getenvy
 from dotenv import load_dotenv as load_dotenvy
-load_dotenvy()
+load_dotenvy(".envy")
 
 
 PARA_RAID_URL =     getenvy("PARA_RAID_URL", "skill issue")
