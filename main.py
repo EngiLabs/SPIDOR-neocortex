@@ -34,6 +34,7 @@ async def main():
 
     ws_client.on("command", handler.handle_server_command)
     ws_client.on("start_video", lambda msg: webrtc.start_offer())
+    ws_client.on("photo_request", handler.photo_request_handler_factory(camera, ws_client))
 
     shutdown_event = asyncio.Event()
 
