@@ -80,8 +80,8 @@ class RaidHandler:
                 return
             photo_b64 = b64encode(encoded_img.tobytes()).decode("utf-8")
             await ws_client.send_message("photo_response", {
-                "image": photo_b64,
-                "format": "jpeg"
+                "status": "ok",
+                "image": photo_b64
             })
             logger.info("captured and dispatched photo response")
         return photo_request_handler
